@@ -61,7 +61,7 @@ header h1 {
 }
 
 .me {
-  float: right;
+  float: none;
 }
 
 /* main ----------*/
@@ -173,6 +173,12 @@ footer {
 }
 
 /* responsive ----------*/
+
+@media screen and (min-width: 380px) {
+  .me {
+    float: right;
+  }
+}
 
 @media screen and (min-width: 600px) {
   #projects .project {
