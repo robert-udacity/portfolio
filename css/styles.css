@@ -50,6 +50,8 @@ main {
 header {
   border-bottom: 1px dashed #111;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header .logo {
@@ -61,7 +63,7 @@ header h1 {
 }
 
 .me {
-  float: none;
+  margin-left: auto;
 }
 
 /* main ----------*/
@@ -116,7 +118,6 @@ header h1 {
 }
 
 .project img {
-  display: block;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -174,9 +175,9 @@ footer {
 
 /* responsive ----------*/
 
-@media screen and (min-width: 380px) {
-  .me {
-    float: right;
+@media screen and (max-width: 425px) {
+  .me, .logo-wrapper {
+    width: 100%;
   }
 }
 
